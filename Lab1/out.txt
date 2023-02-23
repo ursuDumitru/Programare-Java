@@ -1,0 +1,4 @@
+Suma : 27
+Media aritemtica : 4.5
+Val minima : 2
+Val maxima : 8
