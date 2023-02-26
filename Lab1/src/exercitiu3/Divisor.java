@@ -1,13 +1,13 @@
 package exercitiu3;
 
-public class Divizori {
+public class Divisor {
     static void findDivisors(int nr){
         int count = 0;
 
         for(int i = 1; i <= nr; i++){
             if(nr%i==0){
                 count++;
-                System.out.println("Divizor : " + i);
+                System.out.println("Divisor : " + i);
             }
         }
 
@@ -18,6 +18,6 @@ public class Divizori {
 
 class Main{
     public static void main(String[] args) {
-        Divizori.findDivisors(7);
+        Divisor.findDivisors(8);
     }
 }
