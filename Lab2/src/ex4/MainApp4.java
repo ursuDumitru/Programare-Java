@@ -58,8 +58,25 @@ class Person{
         if(cifraAleatoare == 0)
             return false;
 
-        int nrMagic = Integer.parseInt(cnp.substring(0, cnp.length() - 1));
-        //IMPLEMENTEAZA Mai departe
+        int cifra13 = Integer.parseInt(String.valueOf(chars[12]));
+        cnp = cnp.substring(0, cnp.length() - 1);
+        chars = cnp.toCharArray();
+        char[] nrSpecial = {'2','7','9','1','4','6','3','5','8','2','7','9'}; //279146358279
+        int nrMagic = 0;
+        while(chars.length > 0) {
+            int n = Integer.parseInt(String.valueOf(chars[chars.length - 1]));
+            int m = Integer.parseInt(String.valueOf(nrSpecial[nrSpecial.length - 1]));
+
+            nrMagic += (n * m);
+
+            chars = Arrays.copyOf(chars, chars.length - 1);
+            nrSpecial = Arrays.copyOf(nrSpecial, nrSpecial.length - 1);
+        }
+
+        if((nrMagic % 11) == 10 && cifra13 == 1)
+            return true;
+        else if(cifra13 != (nrMagic % 11))
+            return false;
 
         return true;
     }
