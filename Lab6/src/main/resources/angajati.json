@@ -1,0 +1,32 @@
+[
+  {
+    "nume": "Dumitru",
+    "postul": "Software Dev",
+    "data_angajarii": "2022-07-01",
+    "salariu": 5000.23
+  },
+  {
+    "nume": "Mihail",
+    "postul": "director",
+    "data_angajarii": "2023-03-30",
+    "salariu": 0.0
+  },
+  {
+    "nume": "Bob Omul Minune",
+    "postul": "Boss",
+    "data_angajarii": "1945-01-01",
+    "salariu": 1.0000001E7
+  },
+  {
+    "nume": "Dan Melinte",
+    "postul": "CEO",
+    "data_angajarii": "2000-02-02",
+    "salariu": 1234.4321
+  },
+  {
+    "nume": "Ana Fata Floare",
+    "postul": "Orez",
+    "data_angajarii": "2001-05-05",
+    "salariu": 999.111
+  }
+]
